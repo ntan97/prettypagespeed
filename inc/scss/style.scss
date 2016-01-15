@@ -1,0 +1,46 @@
+.hero {
+    height: 100vh;
+    background-size: cover;
+    position: relative;
+    .gradient {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 150%);
+        background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 150%);
+        background: linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 150%);
+    }
+    .percent {
+        color: white;
+        font-size: 15rem;
+        font-weight: bold;
+        display: block;
+        text-align: center;
+        i {
+            font-size: 4rem;
+            font-style: normal;
+        }
+    }
+    &.reporting {
+        &.success {
+            background: #008033;
+        }
+        &.mediocre {
+            background: #FFF949;
+        }
+        &.failure {
+            background: #AD0D0D;
+        }
+    }
+    .home {
+        margin-top: 25%;
+    }
+}
+
+section {
+    &.content {
+        padding: 3rem 0 2rem;
+    }
+}
